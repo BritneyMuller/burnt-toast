@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Burnt Toast AI Swap",
+    "version": "1.0",
+    "description": "An Orange Labs Project by Britney Muller - Replaces all instances of 'AI' with 'burnt toast'",
+    "author": "Britney Muller - Orange Labs",
+    
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    
+    "permissions": [
+      "activeTab"
+    ],
+    
+    "icons": {
+    "128": "icons/icon.png"
+    },
+
+    "action": {
+        "default_title": "Burnt Toast AI Swap - Orange Labs Project",
+        "default_icon": "icons/icon.png"
+    }
+  }
